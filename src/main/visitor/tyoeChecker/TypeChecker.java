@@ -10,6 +10,7 @@ import main.ast.node.declaration.handler.InitHandlerDeclaration;
 import main.ast.node.declaration.handler.MsgHandlerDeclaration;
 import main.ast.node.expression.*;
 import main.ast.node.expression.operators.BinaryOperator;
+import main.ast.node.expression.operators.UnaryOperator;
 import main.ast.node.expression.values.BooleanValue;
 import main.ast.node.expression.values.IntValue;
 import main.ast.node.expression.values.StringValue;
@@ -54,7 +55,7 @@ public class TypeChecker extends VisitorImpl {
         return false;
     }
 
-    private boolean isSubType(Type a,Type b){
+    private boolean isSubType(Type a, Type b){
         // true if a<:b
         if(a instanceof NoType){
             return true;
@@ -93,11 +94,61 @@ public class TypeChecker extends VisitorImpl {
     }
 
     private Type binaryExpressionTypeCheck(Type left, Type right, BinaryOperator operator) {
-
+        if (operator == BinaryOperator.mult || operator == BinaryOperator.add || operator == BinaryOperator.sub || operator == BinaryOperator.mod ||
+                operator == BinaryOperator.div || operator == BinaryOperator.gt || operator == BinaryOperator.lt) {
+            if (left instanceof IntType && right instanceof IntType) {
+                return new IntType();
+            } else if (!((left instanceof IntType && right instanceof NoType)
+                        || (left instanceof NoType && right instanceof IntType)
+                            || (left instanceof NoType && right instanceof NoType))) {
+                // compile err : 2
+            }
+            return new NoType();
+        } else if (operator == BinaryOperator.or || operator == BinaryOperator.and) {
+            if (left instanceof BooleanType && right instanceof BooleanType) {
+                return new IntType();
+            } else if ((left instanceof BooleanType && right instanceof NoType)
+                    || (left instanceof NoType && right instanceof BooleanType)
+                    || (left instanceof NoType && right instanceof NoType)) {
+                // compile err : 2
+            }
+            return new NoType();
+        } else if (operator == BinaryOperator.eq || operator == BinaryOperator.neq) {
+            if (left instanceof NoType || right instanceof NoType)
+                return new NoType();
+            if (isSubType(left, right))
+                return right;
+            else {
+                // compile err : 2
+                new NoType();
+            }
+        }
+//        what should we do  for assign?
+        return new NoType();
     }
 
-    private Type binaryExpressionTypeCheck(Type type, BinaryOperator operator) {
-
+    private Type UnaryExpressionTypeCheck(Type type, UnaryOperator operator) {
+        if (operator == UnaryOperator.postdec || operator == UnaryOperator.predec || operator == UnaryOperator.postinc
+            || operator == UnaryOperator.preinc || operator == UnaryOperator.minus) {
+            if (type instanceof IntType)
+                return type;
+            else if (type instanceof NoType)
+                return new NoType();
+            else {
+                // compile err : err 2
+                return new NoType();
+            }
+        } else if (operator == UnaryOperator.not) {
+            if (type instanceof BooleanType)
+                return type;
+            else if (type instanceof NoType)
+                return new NoType();
+            else {
+                // compile err : err 2
+                return new NoType();
+            }
+        }
+        return new NoType();
     }
 
     private Type typeCheck(Expression expression,SymbolTable handlerSym,SymbolTable actorSym){
@@ -163,6 +214,7 @@ public class TypeChecker extends VisitorImpl {
             BinaryOperator operator = binaryExpression.getBinaryOperator();
             return binaryExpressionTypeCheck(left,right,operator);
         }
+        return new NoType();
     }
 
     @Override
