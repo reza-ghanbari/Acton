@@ -1353,9 +1353,9 @@ public class actonParser extends Parser {
 	public static class ForStmtContext extends ParserRuleContext {
 		public For forstmt;
 		public Token f;
-		public AssignStmtContext init;
+		public AssignmentContext init;
 		public ExpressionContext cond;
-		public AssignStmtContext update;
+		public AssignmentContext update;
 		public StatementContext s;
 		public TerminalNode LPAREN() { return getToken(actonParser.LPAREN, 0); }
 		public List<TerminalNode> SEMICOLON() { return getTokens(actonParser.SEMICOLON); }
@@ -1367,11 +1367,11 @@ public class actonParser extends Parser {
 		public StatementContext statement() {
 			return getRuleContext(StatementContext.class,0);
 		}
-		public List<AssignStmtContext> assignStmt() {
-			return getRuleContexts(AssignStmtContext.class);
+		public List<AssignmentContext> assignment() {
+			return getRuleContexts(AssignmentContext.class);
 		}
-		public AssignStmtContext assignStmt(int i) {
-			return getRuleContext(AssignStmtContext.class,i);
+		public AssignmentContext assignment(int i) {
+			return getRuleContext(AssignmentContext.class,i);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
@@ -1408,7 +1408,7 @@ public class actonParser extends Parser {
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INTVAL) | (1L << STRINGVAL) | (1L << TRUE) | (1L << FALSE) | (1L << SENDER) | (1L << SELF) | (1L << LPAREN) | (1L << PLUSPLUS) | (1L << MINUSMINUS) | (1L << MINUS) | (1L << NOT) | (1L << IDENTIFIER))) != 0)) {
 				{
 				setState(317);
-				((ForStmtContext)_localctx).init = assignStmt();
+				((ForStmtContext)_localctx).init = assignment();
 				_localctx.forstmt.setInitialize(((ForStmtContext)_localctx).init.assign);
 				}
 			}
@@ -1434,7 +1434,7 @@ public class actonParser extends Parser {
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INTVAL) | (1L << STRINGVAL) | (1L << TRUE) | (1L << FALSE) | (1L << SENDER) | (1L << SELF) | (1L << LPAREN) | (1L << PLUSPLUS) | (1L << MINUSMINUS) | (1L << MINUS) | (1L << NOT) | (1L << IDENTIFIER))) != 0)) {
 				{
 				setState(329);
-				((ForStmtContext)_localctx).update = assignStmt();
+				((ForStmtContext)_localctx).update = assignment();
 				_localctx.forstmt.setUpdate(((ForStmtContext)_localctx).update.assign);
 				}
 			}
@@ -3089,11 +3089,11 @@ public class actonParser extends Parser {
 		"\31\3\2\2\2\u0133\u0134\5\34\17\2\u0134\u0135\7 \2\2\u0135\u0136\b\16"+
 		"\1\2\u0136\33\3\2\2\2\u0137\u0138\5*\26\2\u0138\u0139\7#\2\2\u0139\u013a"+
 		"\5(\25\2\u013a\u013b\b\17\1\2\u013b\35\3\2\2\2\u013c\u013d\7\23\2\2\u013d"+
-		"\u013e\7\31\2\2\u013e\u0142\b\20\1\2\u013f\u0140\5\32\16\2\u0140\u0141"+
+		"\u013e\7\31\2\2\u013e\u0142\b\20\1\2\u013f\u0140\5\34\17\2\u0140\u0141"+
 		"\b\20\1\2\u0141\u0143\3\2\2\2\u0142\u013f\3\2\2\2\u0142\u0143\3\2\2\2"+
 		"\u0143\u0144\3\2\2\2\u0144\u0148\7 \2\2\u0145\u0146\5(\25\2\u0146\u0147"+
 		"\b\20\1\2\u0147\u0149\3\2\2\2\u0148\u0145\3\2\2\2\u0148\u0149\3\2\2\2"+
-		"\u0149\u014a\3\2\2\2\u014a\u014e\7 \2\2\u014b\u014c\5\32\16\2\u014c\u014d"+
+		"\u0149\u014a\3\2\2\2\u014a\u014e\7 \2\2\u014b\u014c\5\34\17\2\u014c\u014d"+
 		"\b\20\1\2\u014d\u014f\3\2\2\2\u014e\u014b\3\2\2\2\u014e\u014f\3\2\2\2"+
 		"\u014f\u0150\3\2\2\2\u0150\u0151\7\32\2\2\u0151\u0152\5\24\13\2\u0152"+
 		"\u0153\b\20\1\2\u0153\37\3\2\2\2\u0154\u0155\7\26\2\2\u0155\u0156\7\31"+

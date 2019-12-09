@@ -127,9 +127,9 @@ assignment returns [Assign assign]
 
 forStmt returns [For forstmt]
     :   f = FOR LPAREN {$forstmt = new For(); $forstmt.setLine($f.getLine());}
-        (init = assignStmt {$forstmt.setInitialize($init.assign);})? SEMICOLON
+        (init = assignment {$forstmt.setInitialize($init.assign);})? SEMICOLON
         (cond = expression {$forstmt.setCondition($cond.e);})? SEMICOLON
-        (update = assignStmt {$forstmt.setUpdate($update.assign);})? RPAREN s = statement {$forstmt.setBody($s.s);}
+        (update = assignment {$forstmt.setUpdate($update.assign);})? RPAREN s = statement {$forstmt.setBody($s.s);}
     ;
 
 ifStmt returns [Conditional ifstmt]
