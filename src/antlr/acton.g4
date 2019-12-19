@@ -18,6 +18,7 @@ program returns [Program p]
     :   {$p = new Program();}
         (actordec = actorDeclaration {$p.addActor($actordec.actordec);})+
         programMain = mainDeclaration {$p.setMain($programMain.main);}
+        EOF
     ;
 
 actorDeclaration returns [ActorDeclaration actordec]
@@ -30,7 +31,9 @@ actorDeclaration returns [ActorDeclaration actordec]
         (KNOWNACTORS
         LBRACE
             (actor = identifier name = identifier SEMICOLON
-            {$actordec.addKnownActor(new VarDeclaration($name.id, new ActorType($actor.id)));})*
+            {VarDeclaration vardec = new VarDeclaration($name.id, new ActorType($actor.id));
+            vardec.setLine($actor.id.getLine());
+            $actordec.addKnownActor(vardec);})*
         RBRACE)
 
         (ACTORVARS
@@ -149,7 +152,7 @@ msgHandlerCall returns [MsgHandlerCall handlerCall]
     :   {Expression instance;}
         (id = identifier {instance = $id.id;} |
         SELF {instance = new Self();} |
-        SENDER {instance = new Sender();}) dot = DOT
+        SENDER {instance = new Sender();}) dot = DOT {instance.setLine($dot.getLine());}
         name = identifier {$handlerCall = new MsgHandlerCall(instance, $name.id); $handlerCall.setLine($dot.getLine());}
         LPAREN el = expressionList RPAREN {$handlerCall.setArgs($el.expressions);} SEMICOLON
     ;
@@ -166,7 +169,7 @@ orExpression returns [Expression oe]
 
 andExpression returns [Expression ae]
     :   ee = equalityExpression {$ae = $ee.ee;}
-        (and = AND e2 = equalityExpression {$ae = new BinaryExpression($ae, $ee.ee, BinaryOperator.and); $ae.setLine($and.getLine());})*
+        (and = AND e2 = equalityExpression {$ae = new BinaryExpression($ae, $e2.ee, BinaryOperator.and); $ae.setLine($and.getLine());})*
     ;
 
 equalityExpression returns [Expression ee]

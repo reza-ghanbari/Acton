@@ -2,14 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95f04ab-cb08-4bc0-9750-91a58d01a581" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_2_complete1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_2_complete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_2_complete.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler-phase3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/compiler-phase3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/antlr/acton.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/antlr/acton.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Acton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Acton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/ActorDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/ActorDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/ActorInstantiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/ActorInstantiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/Declaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/Declaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/VarDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/VarDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/HandlerDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/HandlerDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/InitHandlerDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/InitHandlerDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/MsgHandlerDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/declaration/handler/MsgHandlerDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/ActorVarAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/ActorVarAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/ArrayCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/ArrayCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/BinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/BinaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/Identifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/Self.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/Self.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/UnaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/operators/BinaryOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/operators/BinaryOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/operators/UnaryOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/operators/UnaryOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/values/BooleanValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/values/BooleanValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/values/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/values/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/values/StringValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/expression/values/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/expression/values/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Assign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Break.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Break.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Conditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Conditional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Continue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Continue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/For.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/For.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/MsgHandlerCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/MsgHandlerCall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/node/statement/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/node/statement/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/actorType/ActorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/actorType/ActorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/arrayType/ArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/arrayType/ArrayType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/noType/NoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/noType/NoType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/primitiveType/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/primitiveType/BooleanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/primitiveType/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/primitiveType/IntType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ast/type/primitiveType/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ast/type/primitiveType/StringType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/compileError/CompileErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/compileError/CompileErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableActorItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableActorItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableHandlerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableHandlerItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableMainItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/SymbolTableMainItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/itemException/ItemAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/itemException/ItemAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/itemException/ItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/itemException/ItemNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableActorVariableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableActorVariableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableHandlerArgumentItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableHandlerArgumentItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableKnownActorItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableKnownActorItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableLocalVariableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableLocalVariableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableVariableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableVariableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/NameAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/NameAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableActorParentLinker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableActorParentLinker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/TraverseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/nameAnalyser/TraverseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parsers/acton.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/acton.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/actonBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/actonBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/actonLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/actonLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/actonLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/actonLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/actonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/actonListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parsers/actonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/actonParser.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,76 +83,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/symbolTable/SymbolTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1331">
-              <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-              <folding>
-                <element signature="e#2268#2269#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/Self.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isChildOf#0;class#TypeChecker#0" />
-                <element signature="method#isSubType#0;class#TypeChecker#0" />
-                <element signature="method#isActorExist#0;class#TypeChecker#0" />
-                <element signature="e#9853#9854#0" expanded="true" />
-                <element signature="e#9945#9946#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/operators/UnaryOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/ActorVarAccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableActorVariableItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -95,139 +90,17 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sender</find>
-      <find>arra</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/Acton.java" />
-        <option value="$PROJECT_DIR$/src/antlr/acton.g4" />
-        <option value="$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1V0E6oudJFbbG3hd0VuXVavXk9u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="53" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="antlr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="symbolTable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="symbolTable" type="462c0819:PsiDirectoryNode" />
-              <item name="symbolTableVariableItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-              <item name="nameAnalyser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="compiler-phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="compiler-phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-              <item name="tyoeChecker" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="$PROJECT_DIR$/src/antlr/acton.g4::/auto-gen" value="false" />
@@ -238,25 +111,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Phase 2/antlr-4.7.2-complete.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Acton" />
+      <module name="compiler-phase3" />
+      <option name="PROGRAM_PARAMETERS" value="src\Tests\test.act" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -279,323 +150,53 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="15992000" />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Tool Output" order="12" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/Identifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/visitor/VisitorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="181" column="5" selection-start-line="62" selection-start-column="4" selection-end-line="181" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/symbolTable/SymbolTableHandlerItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/declaration/ActorDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Acton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/type/actorType/ActorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableActorParentLinker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/declaration/handler/InitHandlerDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/declaration/handler/MsgHandlerDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/statement/MsgHandlerCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/declaration/handler/HandlerDeclaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/Self.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/antlr/acton.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="226" column="4" selection-start-line="226" selection-end-line="226" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/visitor/nameAnalyser/SymbolTableConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/visitor/nameAnalyser/NameAnalyser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/symbolTable/SymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1331">
-          <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-          <folding>
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/ActorVarAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/operators/UnaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/operators/BinaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/ArrayCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ast/node/expression/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableVariableItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/symbolTable/symbolTableVariableItem/SymbolTableActorVariableItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/visitor/tyoeChecker/TypeChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isChildOf#0;class#TypeChecker#0" />
-            <element signature="method#isSubType#0;class#TypeChecker#0" />
-            <element signature="method#isActorExist#0;class#TypeChecker#0" />
-            <element signature="e#9853#9854#0" expanded="true" />
-            <element signature="e#9945#9946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>antlr-4.7.2-complete</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576507349699">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1576507349699" />
+    <state x="446" y="41" key="#com.intellij.ide.util.MemberChooser" timestamp="1576383796731">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="41" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1576383796731" />
+    <state x="371" y="123" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576504937441">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="123" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1576504937441" />
+    <state x="321" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576603247968">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="76" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1576603247968" />
+    <state x="348" y="81" key="FileChooserDialogImpl" timestamp="1576502947705">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="348" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1576502947705" />
+    <state width="1237" height="57" key="GridCell.Tab.0.bottom" timestamp="1576721089356">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="57" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576721089356" />
+    <state width="1237" height="57" key="GridCell.Tab.0.center" timestamp="1576721089356">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="57" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576721089356" />
+    <state width="1237" height="57" key="GridCell.Tab.0.left" timestamp="1576721089356">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="57" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576721089356" />
+    <state width="1237" height="57" key="GridCell.Tab.0.right" timestamp="1576721089356">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="57" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576721089356" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1576721084166">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576721084166" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1576646224564">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1576646224564" />
   </component>
 </project>

@@ -29,6 +29,10 @@ public class SymbolTableHandlerItem extends SymbolTableItem {
         this.handlerDeclaration = handlerDeclaration;
     }
 
+    public ArrayList<Type> getArgTypes() {
+        return argTypes;
+    }
+
     public void setHandlerSymbolTable(SymbolTable symbolTable)
     {
         this.handlerSymbolTable = symbolTable;
